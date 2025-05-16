@@ -43,5 +43,91 @@ Write a Python script that displays the following table
 """
 
 #💻 Exercises - Day 3
+import math
+
 
 #1
+age = 32
+
+#2
+height = 1.71
+
+#3
+complexs = 4 - 4j
+
+#4
+base = float(input("Enter base: "))
+height = float(input("Enter height: "))
+area_triangle =  f"The area of a triangle is: {int(0.5 * base * height)}"
+
+#5
+a = float(input("Enter a: "))
+b = float(input("Enter b: "))
+c = float(input("Enter c: "))
+perimetre_triangle = f"The perimeter of the triangle is: {int(a + b + c)}"
+
+#6 
+length_rectangle = float(input("Enter length: "))
+width_rectangle = float(input("Enter width: "))
+area_rectangle = f"The area of a rectangle is: {int(length_rectangle * width_rectangle)}"
+perimeter_rectangle = f"The perimeter of a rectangle is: {int(2 * (length_rectangle + width_rectangle))}"
+
+#7
+radius_circle = float(input("Enter radius: "))
+area_circle = f"The area of a circle is: {(math.pi * (radius_circle ** 2)):.2f}"
+circumference = f"The circumference of a circle is: {(2 * math.pi * radius_circle):.2f}"
+
+#8
+None
+#9
+x1, x2 = 2, 6
+y1, y2 = 2, 10
+slope = f"The slope is: {(y2-y1) / (x2 - x1)}"
+euclidean_distance = f"The euclidean distance is: {math.sqrt((y1 - x1)** 2 + (y2 - x2)** 2)}"
+
+#10
+None
+#11
+None
+#12
+print(len("python") != len("dragon"))
+
+#13
+"on" in "python" and "on" in "dragon"
+
+#14
+"jargon" in "I hope this course is not full of jargon."
+
+#15
+"on" not in "python" and "on" not in "dragon"
+
+#16
+str(float(len("python")))
+
+#17
+numbers = float(input("Enter number: "))
+numbers_divisible = lambda: "It's divisible" if numbers % 2 == 0 else "It's not divisible"
+print(numbers_divisible)
+
+#18
+floor_division = 7 // 3
+lambda: floor_division == int(2.7)
+
+#19
+lambda: "10" == 10
+
+#20
+lambda: float('9.8') == 10
+
+#21
+hours = float(input("Enter hours: "))
+rate = float(input("Enter rate per hour: "))
+pay_of_the_person = f"Your weekly earning is: {hours * rate}"
+
+#22
+number_of_years = int(input("Enter number of years you have lived: "))
+number_of_seconds_person = f"You have lived for {number_of_years * 365 * 24 * 60 * 60} seconds."
+
+#23
+for i in range(1,6):
+    print(f"{i} {1} {i} {i*i} {i*i*i}")
