@@ -54,3 +54,139 @@ Make the following using string formatting methods:
 8 ** 6 = 262144
 """
 
+#1
+string_value_one = 'Thirty' +" "+ 'Days' +" "+ 'Of' +" "+ 'Python'
+print(string_value_one)
+
+#2
+string_value_two = 'Coding' +" "+ 'For' +" "+ 'All' 
+print(string_value_two)
+
+#3
+company = string_value_two
+
+#4
+print(company)
+
+#5
+print(len(company))
+
+#6
+print(f"Method Upper 'AA' {company.upper()}")
+
+#7
+print(f"Method lower 'aa'{company.lower()}")
+
+#8
+print(f"Method capitalize 'Aa bb' {company.capitalize()}")
+print(f"Method title 'Aa Bb' {company.title()}")
+print(f"Method swapcase 'aA bB' {company.swapcase()}")
+
+#9
+print(f"Cut(slice): {company[6::]}")
+
+#10
+print(f"Method find: {company.find('Coding')}")
+print(f"Method index: {company.index('Coding')}")
+print(f"Operations identity: {'Coding' in company }")
+
+#11
+print(f"Method remplace: {company.replace('Coding','python'.title())}")
+
+#12
+None
+
+#13
+print(f"Method split: {company.split()}")
+
+#14
+print(f"Spliting word: {'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon'.split(',')}")
+
+#15
+print(f"The character at index 0 in the string Coding For All: {'Coding For All'[0]}")
+
+#16
+print(f"The character at last index 0 in the string Coding For All: {'Coding For All'[-1]}")
+
+#17
+print(f"The character at index 10 in the string Coding For All: {'Coding For All'[10]}")
+
+#18
+for acronym in 'Python For Everyone':
+    print(acronym[0])
+
+#19
+for acronym in 'Coding For All':
+    print(acronym[0])
+
+#20
+print(f"Using index to determine the position of the first occurrence of C in Coding For All: {'Coding For All'.index('C')}")
+
+#21
+print(f"Using index to determine the position of the first occurrence of C in Coding For All: {'Coding For All'.index('F')}")
+
+#22
+print(f"Using rfind to determine the position of the last occurrence of l in Coding For All People: {'Coding For All People'.rfind('l')}")
+
+#23
+print(f"Using index to find the position of the first occurrence of the word 'because' in the following sentence: 'You cannot end a sentence with because because because is a conjunction': {'You cannot end a sentence with because because because is a conjunction'.index('because')}")
+print(f"Using find to find the position of the first occurrence of the word 'because' in the following sentence: 'You cannot end a sentence with because because because is a conjunction': {'You cannot end a sentence with because because because is a conjunction'.find('because')}")
+
+#24
+print(f"Using rfind to find the position of the last occurrence of the word because in the following sentence: 'You cannot end a sentence with because because because is a conjunction': {'You cannot end a sentence with because because because is a conjunction'.rfind('l')}")
+
+#25
+print(f"Using replace: Slice out the phrase 'because because because' in the following sentence: 'You cannot end a sentence with because because because is a conjunction' {'You cannot end a sentence with because because because is a conjunction'.replace('because because because','')}")
+
+#26
+print(f"Using find: Find the position of the first occurrence of the word 'because' in the following sentence: 'You cannot end a sentence with because because because is a conjunction' {'You cannot end a sentence with because because because is a conjunction'.find('because')}")
+
+#27
+print(f"Using replace: Slice out the phrase 'because because because' in the following sentence: 'You cannot end a sentence with because because because is a conjunction': {'You cannot end a sentence with because because because is a conjunction'.replace('because because because','')}")
+
+#28
+print(f"Using startswith: Does 'Coding For All' start with a substring Coding?: {'Coding For All'.startswith('Coding')}")
+
+#29
+print(f"Using endswith: Does 'Coding For All' end with a substring coding: {'Coding For All'.endswith('coding')}")
+
+#30
+print(f"Using strip:'   Coding For All      '  , remove the left and right trailing spaces in the given string.: {'   Coding For All      '.strip()}")
+
+#31
+print("""
+Which one of the following variables return True when we use the method isidentifier():
+30DaysOfPython
+thirty_days_of_python
+""")
+print(f"With 30DaysOfPython: {'30DaysOfPython'.isidentifier()}")
+print(f"With thirty_days_of_python: {'thirty_days_of_python'.isidentifier()}")
+
+
+#32
+libraries =  ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']
+hash = "#"
+print(hash.join(libraries))
+
+#33
+print("I am enjoying this challenge.\nI just wonder what is next.")
+
+#34
+print("Name\t\tAge\t\tCountry\t\tCity\nAsabeneh\t250\t\tFinland\t\tHelsinki")
+
+#35
+radius = 10
+area = 3.14 * radius ** 2
+print(f"The area of a circle with radius {radius} is {area} meters square.")
+
+#36
+n1,n2 = 8,6
+print(f"""
+{n1} + {n2} = {n1 + n2}
+{n1} - {n2} = {n1 - n2 }
+{n1} * {n2} = {n1 * n2 }
+{n1} / {n2} = {n1 / n2 }
+{n1} % {n2} = {n1 % n2 }
+{n1} // {n2} = {n1 // n2 }
+{n1} ** {n2} = {n1 * n2 }""")
+
