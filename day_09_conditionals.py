@@ -54,3 +54,111 @@ Here we have a person dictionary. Feel free to modify it!
  * If the person is married and if he lives in Finland, print the information in the following format:
     Asabeneh Yetayeh lives in Finland. He is married.
 """
+#1
+age = 15 #input("Enter your age: ")
+if age >= 18:
+    print("You are old enough to drive.")
+elif age <= 0:
+    print("You can't enter a negative number.")
+else:
+    print(f"You need {18 - age} more years to learn to drive.")
+
+
+#2
+my_age = 25 #input("Enter your age: ")
+your_age =30 #input("Enter your age: ")
+if my_age == your_age:
+    print("We've the same age.")
+elif my_age > your_age:
+    print(f"I'm {my_age - your_age} years older than you.")
+elif my_age < your_age:
+    print(f"You're {your_age - my_age} years older than me.")
+
+"""#3
+value_one = int(input("Enter number one: "))
+value_two = int(input("Enter number two: "))
+if value_one > value_two:
+    print(f"{value_one} is greater than {value_two}")
+elif value_one < value_two:
+    print(f"{value_one} is smaller than {value_two}")
+elif value_one == value_two:
+    print(f"{value_one} is equal than {value_two}")
+else:
+    print("Enter valid value.")
+
+   
+#Level 2
+
+#1
+scores_student = 1
+if scores_student >= 80 and scores_student <= 100:
+    print("A")
+elif scores_student >= 70 and scores_student <= 79:
+    print("B")
+elif scores_student >= 60 and scores_student <= 69:
+    print("C")
+elif scores_student >= 50 and scores_student <= 59:
+    print("D")
+elif scores_student >= 0 and scores_student <= 49:
+    print("F")
+
+#2
+season = input("Enter the season: ").title()
+if season in ["September", "October", "November"]:
+    print("The season is Autumn")
+elif season in ["December", "January", "February"]:
+    print("The season is Winter.")
+elif season in ["March", "April", "May"]:
+    print("The season is Spring.")
+elif season in ["June", "July", "August"]:
+    print("The season is Summer.")
+else:
+    print("Invalid season")
+
+
+#4
+fruits = ['banana', 'orange', 'mango', 'lemon']
+new_fruits = input("Add fruit: ")
+if new_fruits in fruits:
+    print('That fruit already exist in the list')
+else:
+    fruits.append(new_fruits)
+    print(fruits)
+"""
+#Level 3
+
+person={
+    'first_name': 'Kenier',
+    'last_name': 'Noriega',
+    'age': 32,
+    'country': 'Venezuela',
+    'is_marred': True,
+    'skills': ['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
+    'address': {
+        'street': 'roque hernandez 16',
+        'zipcode': '61005'
+    }
+    }
+#
+middle = len(person["skills"]) // 2
+print(person["skills"][middle])
+
+#
+print("Python" in person["skills"])
+
+#
+skills = set(person['skills'])
+
+if skills == {"JavaScript", "React"}:
+    print('He is a front end developer')
+elif skills == {"Node", "Python", "MongoDB"}:
+    print('He is a backend developer')
+elif {"React", "Node", "MongoDB"}.issubset(skills):
+    print('He is a fullstack developer')
+else:
+    print('unknown title')
+
+
+#
+if person['is_marred'] and person["country"] == "Venezuela":
+    print(f"{person['first_name']} {person['last_name']} lives in Finland. He is married.")
